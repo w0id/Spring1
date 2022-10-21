@@ -13,7 +13,7 @@ public class Product {
         DecimalFormat costFormat = new DecimalFormat(".##");
         this.id = random.nextInt(99);
         this.title = title + random.nextInt(99);
-        this.cost = costFormat.format(0.5 + (99.99 - 1) * random.nextDouble());
+        this.cost = costFormat.format(999.99 * random.nextDouble());
     }
 
     public Integer getId() {
